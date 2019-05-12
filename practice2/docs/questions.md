@@ -11,3 +11,12 @@
 3. <10, 3, 15, 12, 7, 2>
 4. <7, 2, 4, 15, 20, 5>
 
+## 2
+
+> **Longest Common Subsequence** (LCS). The following are some instance.
+
+**最长公共子序列** （LCS）。以下是一些例子。
+
+1. X: xzyzzyx  Y: zxyyzxz
+2. X: MAEEEVAKLEKHLMLLRQEYVKLQKKLAETEKRCALLAAQANKESSSESFISRLLAIVAD  Y: MAEEEVAKLEKHLMLLRQEYVKLQKKLAETEKRCTLLAAQANKENSNESFISRLLAIVAG
+
