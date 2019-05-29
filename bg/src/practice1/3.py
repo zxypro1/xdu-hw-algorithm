@@ -1,5 +1,4 @@
 from random import choice
-from time import time
 
 
 def quick_sort(source: list) -> None:
@@ -27,32 +26,17 @@ def partition(source: list, p: int, r: int) -> (int, int):
         elif source[elem] == source[r]:
             j -= 1
             source[elem], source[j] = source[j], source[elem]
+            continue
 
         elem += 1
 
-    for k in range(j, r + 1):
+    for k in range(j, r+1):
         i += 1
-        source[i], source[j] = source[j], source[i]
+        source[i], source[k] = source[k], source[i]
     return i - r + j, i
 
 
 if __name__ == '__main__':
-
-    # 读取待排序数据，100万数据
-    a = []
-    with open('test_data.txt', 'r', encoding='utf-8') as f:
-        while True:
-            i = f.readline()
-            if i == '':
-                break
-            a.append(float(i))
-
-    # 内建排序函数
-    start_time = time()
-    b = sorted(a)
-    print(time() - start_time)
-
-    # 使用我实现的快速排序算法进行排序，计时，并判断排序结果是否正确
-    start_time = time()
-    quick_sort(a[:1000000])
-    print(a == b, time() - start_time)
+    a = [1, 5, 9, 28, 21, 23, 10, 23, 101, 233, 66, 1, -2, 20]
+    quick_sort(a)
+    print(a)

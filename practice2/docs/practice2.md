@@ -1,4 +1,4 @@
-# 第二次上机题
+# Practice 2
 
 ## 1
 
@@ -22,13 +22,22 @@
 
 ## 3
 
+> **Longest Common Substring** . The following are some instances.
+
+**最长公共子串** 。以下是一些例子。
+
+1. X: xzyzzyx  Y: zxyyzxz
+2. X: MAEEEVAKLEKHLMLLRQEYVKLQKKLAETEKRCALLAAQANKESSSESFISRLLAIVAD  Y: MAEEEVAKLEKHLMLLRQEYVKLQKKLAETEKRCTLLAAQANKENSNESFISRLLAIVAG
+
+## 4
+
 > Max Sum. The following is an instance.
 
 **最大和** 。以下是一个例子。
 
 1. (-2, 11, -4, 13, -5, -2)
 
-## 4
+## 5
 
 > Shortest path in multistage graphs. Find the shortest path from 0 to 15 for the following graph.
 > 
