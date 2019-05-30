@@ -1,16 +1,8 @@
 import functools
 
 
-def compare_jobs(job1, job2):
-    if job1[1] < job2[1]:
-        return -1
-    elif job1[1] > job2[1]:
-        return 1
-    return 0
-
-
 def sjf(jobs):
-    scheduling_order = sorted([[i, jobs[i], 0] for i in range(len(jobs))], key=functools.cmp_to_key(compare_jobs))
+    scheduling_order = sorted([[i, jobs[i], 0] for i in range(len(jobs))], key=lambda a: a[1])
     avg_completion_time = 0
     for i in range(len(scheduling_order)):
         avg_completion_time += scheduling_order[i][1] * (len(scheduling_order) - i)
