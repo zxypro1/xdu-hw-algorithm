@@ -1,4 +1,4 @@
-def lcs_length(x, y):
+def lcs(x, y):
     m = len(x)
     n = len(y)
 
@@ -42,4 +42,4 @@ if __name__ == '__main__':
         ]
     ]
     for data in datas:
-        print(lcs_length(data[0], data[1]))
+        print(lcs(data[0], data[1]))

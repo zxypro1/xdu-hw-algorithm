@@ -30,4 +30,8 @@ def print_optimal_parens(m, i, j, end=''):
 
 
 if __name__ == '__main__':
-    matrix_chain_order([30, 35, 15, 5, 10, 20, 25])
+    matrix_chain_order([3, 5, 2, 1, 10])
+    matrix_chain_order([2, 7, 3, 6, 10])
+    matrix_chain_order([10, 3, 15, 12, 7, 2])
+    matrix_chain_order([7, 2, 4, 15, 20, 5])
+
