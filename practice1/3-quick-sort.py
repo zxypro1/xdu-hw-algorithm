@@ -1,6 +1,8 @@
 from random import choice
 from time import time
 
+from typing import List
+
 
 def quick_sort(source: list) -> None:
     _quick_sort(source, 0, len(source) - 1)
@@ -56,3 +58,5 @@ if __name__ == '__main__':
     start_time = time()
     quick_sort(a[:1000000])
     print(a == b, time() - start_time)
+    # 若数列全部相等，则需要比较n(n-1)/2次，即O(n^2) 最差情况
+    # 最好是T(n)=2T(n/2)+n,主定理,为O(nlgn)
